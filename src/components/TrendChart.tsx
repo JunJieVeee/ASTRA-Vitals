@@ -97,7 +97,6 @@ export function TrendChart({ activeMetric, history, profile, environment, onMetr
               cursor={{ stroke: '#8ba7b8', strokeDasharray: '4 4' }}
               contentStyle={{ background: '#0b202d', border: '1px solid #315264', borderRadius: 10, color: '#e4f4f4', boxShadow: '0 16px 38px rgba(0, 0, 0, 0.35)' }}
               labelStyle={{ color: '#9fbac7', marginBottom: 4 }}
-              formatter={(value: number) => [`${axisValue(value, metric.precision)} ${metric.unit}`, metric.label]}
             />
             <ReferenceArea y1={baseline.low} y2={baseline.high} fill="#7eb5ff" fillOpacity={0.13} ifOverflow="extendDomain" />
             <ReferenceLine y={band.nominalLow} stroke="#e5b764" strokeDasharray="5 5" strokeOpacity={0.85} />

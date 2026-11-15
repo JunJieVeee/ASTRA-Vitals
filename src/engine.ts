@@ -319,6 +319,7 @@ export function createDemoState(): AppState {
   return {
     activeProfileId: activeProfile.id,
     activeEnvironmentId: 'deep-space-transit',
+    activeScenarioId: null,
     valuesByProfile,
     historyByProfile,
     scansByProfile,

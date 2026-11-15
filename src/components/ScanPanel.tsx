@@ -128,7 +128,10 @@ export function ScanPanel({
                 key={item.id}
                 className={checked ? 'inspection-item inspection-item--checked' : 'inspection-item'}
                 aria-pressed={checked}
-                onClick={() => onToggleCheck(item.id)}
+                onClick={() => {
+                  onToggleCheck(item.id)
+                  onOpenGuidance()
+                }}
               >
                 <span className="inspection-box" aria-hidden="true">{checked && <Check size={14} strokeWidth={3} />}</span>
                 <span><strong>{item.label}</strong><small>{item.detail}</small></span>

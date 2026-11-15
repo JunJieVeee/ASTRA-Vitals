@@ -140,6 +140,7 @@ export interface SyncPacket {
 export interface AppState {
   activeProfileId: string
   activeEnvironmentId: string
+  activeScenarioId: Scenario['id'] | null
   valuesByProfile: Record<string, HealthValues>
   historyByProfile: Record<string, HistoryEntry[]>
   outbox: SyncPacket[]

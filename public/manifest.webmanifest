@@ -1,0 +1,11 @@
+{
+  "name": "ASTRA-Vitals | Autonomous Spaceflight Triage, Readiness & Action",
+  "short_name": "ASTRA-Vitals",
+  "description": "Local-first astronaut health monitoring and guided mission triage.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07131d",
+  "theme_color": "#07131d",
+  "orientation": "any"
+}
